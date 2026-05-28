@@ -1,131 +1,288 @@
 # Ex03 Places Around Me
-## Date: 
 
-## AIM
+## Date:
+
+28-05-2026
+
+---
+
+# AIM
+
 To develop a website to display details about the places around my house.
 
-## DESIGN STEPS
+---
+
+# DESIGN STEPS
 
 ### STEP 1
+
 Create a Django admin interface.
 
 ### STEP 2
+
 Download your city map from Google as an image.
 
 ### STEP 3
-Insert the image using ```<img>``` tag and link it to the map.
+
+Insert the image using `<img>` tag and link it to the map.
 
 ### STEP 4
-Using ```<map>``` tag name the map.
+
+Using `<map>` tag name the map.
 
 ### STEP 5
-Create clickable regions in the image using ```<area>``` tag.
+
+Create clickable regions in the image using `<area>` tag.
 
 ### STEP 6
+
 Write HTML programs for all the regions identified.
 
 ### STEP 7
+
 Execute the programs and publish them.
 
-## CODE
-```
-nithish_exp4.html
+---
 
+# CODE
+
+## index.html
+
+```html
 <html>
-    <body>
-        <h1 align="center" ><font color="red">Avadi-Paruthipattu</font></h1>
-        <br><br>
-        <h3 align="center"><font color="cyan">R. Nithish Aaditiyaa (25011876)</font></h3>
-        <br>
-        <img src="nearme.png" usemap="#image-map">
+<head>
+    <title>VILLUPURAM MAP</title>
+</head>
 
-<map name="image-map">
-    <area target="" alt="Park" title="Park" href="Park.html" coords="1240,498,1444,577" shape="rect">
-    <area target="" alt="CINEMAS" title="CINEMAS" href="CINEMAS.html" coords="175,108,169,136,319,146,319,102,236,103" shape="poly">
-    <area target="" alt="Temple" title="Temple" href="Temple.html" coords="766,485,84" shape="circle">
-    <area target="" alt="Bazaar" title="Bazaar" href="Bazaar.html" coords="1236,175,1339,195,1295,283,1142,256" shape="poly">
-    <area target="" alt="GKS" title="GKS" href="GKS.html" coords="837,281,1056,326" shape="rect">
-</map>
-    </body>
-</html>>
+<body bgcolor="cyan">
 
-Bazaar.html
+    <h1 align="center">VILLUPURAM MAP</h1>
 
-<html>
-    <head>
-        <h1 align="center"><font color="yellow">Avadi-Paruthipattu</font></h1>
-    </head>
-    <body bgcolor="green">
-        <h4 align="center"><font color="brown">Ponnu Super Bazaar Avadi</font></h4>
-        <hr>
-        Super Bazaar boosts itself for its largest stocking of variety goods including, Provisions, Vegetables Fruits, (Gents / Ladies / Children -Readymade) Apparels, Consumer Durables, (Mixie, Grider etc) Electronic Goods (Plastic Items, Cookware, Artificial flowers, Gift Articles, Gift Coupons) Household Items etc.Every time during Festival seasons like Deepavali, Pongal, Ramzan, Christmas, New-year etc the shop is always swelled with people in more number than the regular days.The cordial staffs, Correct pricing, Wide variety has given them a special place in the heart of their customers.Ponnu Super Bazzar has become an iconic representation for its variety and correct pricing.
-    </body>
+    <h2 align="center">
+        T. Rishabh Srivastav - 21224113001
+    </h2>
+
+    <center>
+
+        <img src="map.png"
+             usemap="#image-map"
+             width="1200"
+             height="700">
+
+    </center>
+
+    <map name="image-map">
+
+        <area alt="MGR GOVT COLLEGE"
+              title="MGR GOVT COLLEGE"
+              href="clg.html"
+              coords="592,685,901,803"
+              shape="rect">
+
+        <area alt="VILLUPURAM RAILWAY STATION"
+              title="VILLUPURAM RAILWAY STATION"
+              href="rs.html"
+              coords="922,323,1084,377"
+              shape="rect">
+
+        <area alt="PANAMPET LAKE"
+              title="PANAMPET LAKE"
+              href="lake.html"
+              coords="1059,738,147"
+              shape="circle">
+
+        <area alt="VALEESHWARAR TEMPLE"
+              title="VALEESHWARAR TEMPLE"
+              href="temple.html"
+              coords="1603,474,1907,565"
+              shape="rect">
+
+        <area alt="THENDRAL PARK"
+              title="THENDRAL PARK"
+              href="park.html"
+              coords="765,229,958,308"
+              shape="rect">
+
+    </map>
+
+</body>
 </html>
-
-CINEMAS
-
-<html>
-    <head>
-        <h1 align="center"><font color="yellow">Avadi-Paruthipattu</font></h1>
-    </head>
-    <body bgcolor="violet">
-        <h4 align="center"><font color="blue">VS CINEMAS</font></h4>
-        <hr>
-        VR Cinemas Pattabiram is located on the Tiruvallur High Road in Pattabiram, Chennai, Tamil Nadu 600072.The cinema distinguishes itself with premium audiovisual technology, specifically RGB 4K Laser projection and Dolby Atmos sound, aiming to offer an immersive experience. Generally, recent customer feedback is positive, frequently highlighting assets like the impressive large screen, ample parking facilities, and comfortable seating. However, a few older reviews have occasionally pointed out concerns regarding sound quality or the cleanliness of the washroom facilities.
-    </body>
-</html>
-
-GKS.html
-
-<html>
-    <head>
-        <h1 align="center"><font color="green">Avadi-Paruthipattu</font></h1>
-    </head>
-    <body bgcolor="blue">
-        <h4 align="center"><font color="orange">GKS Convention Centre</font></h4>
-        <hr>
-        Located in the bustling area of Avadi, GKS Convention Centre is a renowned banquet hall in Chennai that offers luxurious modern rooms, suites, and impeccable catering services. It's a perfect blend of tradition and modernity, making it an ideal wedding venue.While the approach road may be cramped due to its location on Bazaar Road, once inside, guests are greeted with a spacious and extraordinary ambience. The team provides excellent support from booking to the end of the event
-    </body>
-</html>
-
-Park.html
-
-<html>
-    <head>
-        <h1 align="center"><font color="red">Avadi-Paruthipattu</font></h1>
-    </head>
-    <body bgcolor="pink">
-        <h4 align="center"><font color="cyan">Avadi Paruthipattu Lake Green Park</font></h4>
-        <hr>
-        Paruthipattu Lake, also known as Avadi Lake, is a lake in Chennai, Tamil Nadu, India. It is located in the Avadi locality of Chennai. It is the second eco-park in the city after Chetput Lake.The lake remained one of the neglected waterbodies in the western suburbs for long, shrinking to 8 acres . In 2018, the Water Resources Department restored the lake at a cost of ₹ 280 million in two phases, developing it into an eco-tourism spot. The lake eco-park was opened to public on 21 June 2019. The renovation involved relocation of approximately 500 people
-    </body>
-</html>
-
-Temple.html
-
-<html>
-    <head>
-        <h1 align="center"><font color="pink">Avadi-Paruthipattu</font></h1>
-    </head>
-    <body bgcolor="red">
-        <h4 align="center"><font color="yellow">Shiva Temple Jeeva Samadhi</font></h4>
-        <hr>
-        Several Shiva temples have a Jeeva Samadhi, which is the tomb of a saint or Siddhar who is believed to have attained spiritual liberation while still in a physical body. Examples include the Jeeva Samadhi of Mahan Gangadhara Navalar within his temple in Chennai, which includes a Shiva Lingam, and the Jeeva Samadhi of Bogar Siddhar within the Murugan Temple in Palani. Many of these temples have a central Shiva sanctum along with the Samadhi, sometimes marked by a Shiva Lingam or a Rishabam (bull) statue.
-    </body>
-</html>
-
 ```
 
-## OUTPUT
+---
 
-<img width="1900" height="1029" alt="Screenshot 2026-05-28 185534" src="https://github.com/user-attachments/assets/01a595b9-3e9e-47f6-b8fd-9f635d804260" />
+## clg.html
 
-![alt text](<Screenshot (145)-1.png>)
-![alt text](<Screenshot (146).png>)
-![alt text](<Screenshot (147).png>)
-![alt text](<Screenshot (148).png>)
-![alt text](<Screenshot (149).png>)
+```html
+<html>
+<head>
+    <title>MGR GOVT COLLEGE</title>
+</head>
+
+<body bgcolor="lightyellow">
+
+    <h1 align="center">MGR GOVT COLLEGE</h1>
+
+    <h2 align="center">
+        T. Rishabh Srivastav
+    </h2>
+
+    <h3 align="center">
+        Register Number : 21224113001
+    </h3>
+
+    <p>
+        Dr. M.G.R. Government Arts and Science College for Women,
+        Villupuram was established in the year 2017.
+    </p>
+
+</body>
+</html>
+```
+
+---
+
+## lake.html
+
+```html
+<html>
+<head>
+    <title>PANAMPET LAKE</title>
+</head>
+
+<body bgcolor="lightblue">
+
+    <h1 align="center">PANAMPET LAKE</h1>
+
+    <h2 align="center">
+        T. Rishabh Srivastav
+    </h2>
+
+    <h3 align="center">
+        Register Number : 21224113001
+    </h3>
+
+    <p>
+        Panampet Lake is located in Villupuram, Tamil Nadu.
+        It is famous for bird watching and natural beauty.
+    </p>
+
+</body>
+</html>
+```
+
+---
+
+## park.html
+
+```html
+<html>
+<head>
+    <title>THENDRAL PARK</title>
+</head>
+
+<body bgcolor="lightgreen">
+
+    <h1 align="center">THENDRAL PARK</h1>
+
+    <h2 align="center">
+        T. Rishabh Srivastav
+    </h2>
+
+    <h3 align="center">
+        Register Number : 21224113001
+    </h3>
+
+    <p>
+        Thendral Park is a popular place in Villupuram.
+    </p>
+
+</body>
+</html>
+```
+
+---
+
+## rs.html
+
+```html
+<html>
+<head>
+    <title>VILLUPURAM RAILWAY STATION</title>
+</head>
+
+<body bgcolor="lightgray">
+
+    <h1 align="center">
+        VILLUPURAM RAILWAY STATION
+    </h1>
+
+    <h2 align="center">
+        T. Rishabh Srivastav
+    </h2>
+
+    <h3 align="center">
+        Register Number : 21224113001
+    </h3>
+
+    <p>
+        Villupuram Junction is an important railway station
+        in Tamil Nadu connecting many cities.
+    </p>
+
+</body>
+</html>
+```
+
+---
+
+## temple.html
+
+```html
+<html>
+<head>
+    <title>VALEESHWARAR TEMPLE</title>
+</head>
+
+<body bgcolor="pink">
+
+    <h1 align="center">
+        VALEESHWARAR TEMPLE
+    </h1>
+
+    <h2 align="center">
+        T. Rishabh Srivastav
+    </h2>
+
+    <h3 align="center">
+        Register Number : 21224113001
+    </h3>
+
+    <p>
+        Aadhi Valeeswarar Temple is a famous Shiva temple
+        located in Villupuram.
+    </p>
+
+</body>
+</html>
+```
+
+---
+
+# OUTPUT
+
+<img width="1900" height="1029" alt="Screenshot 2026-05-28 185534" src="https://github.com/user-attachments/assets/833c7288-b52e-48f6-8d1c-ac3816ed8350" />
+<img width="1294" height="690" alt="Screenshot 2026-05-28 191401" src="https://github.com/user-attachments/assets/0e956ab4-ac63-4033-83cd-056ec04d1d63" />
+<img width="1291" height="693" alt="Screenshot 2026-05-28 191440" src="https://github.com/user-attachments/assets/fafe2758-047a-4147-ae01-d200d14bfc7b" />
+<img width="1303" height="665" alt="Screenshot 2026-05-28 191513" src="https://github.com/user-attachments/assets/9a734536-6af6-4345-a807-1ddc0a03824f" />
+<img width="1299" height="687" alt="Screenshot 2026-05-28 191540" src="https://github.com/user-attachments/assets/bf135546-1587-4ff7-94e7-3bf5a6845006" />
 
 
-## RESULT
-The program for implementing image maps using HTML is executed successfully.
+
+
+
+---
+
+# RESULT
+
+The program for implementing image maps using HTML was executed successfully.
